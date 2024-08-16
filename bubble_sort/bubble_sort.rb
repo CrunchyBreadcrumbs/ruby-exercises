@@ -2,15 +2,15 @@ def bubble_sort(array)
   n = array.length
 
   until n <= 1
-    newn = 0
+    new_n = 0
     array[1..n].each_with_index do |number, index|
       j = index + 1
       if array[j - 1] > array[j]
         array[j], array[j - 1] = array[j - 1], array[j]
-        newn = j
+        new_n = j
       end
     end
-    n = newn
+    n = new_n
   end
 p array
 end
